@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
-* partition - Pa quicksort
+* shota - Pa quicksort
 * @array: Arrayioned
 * @first: Firstarray
 * @last: Last in array
@@ -8,7 +8,7 @@
 *
 * Return: Index of the pivot element
 */
-int partition(int *array, int first, int last, size_t size)
+int shota(int *array, int first, int last, size_t size)
 {
 int i, j, temp;
 if (!array || first < 0 || last < 0 || first >= last)
@@ -40,23 +40,28 @@ print_array(array, size);
 return (i + 1);
 }
 /**
-* qs - sorts an array of integers recursively
-* @array: array to sort
-* @first: first position
-* @last: last position
-* @size: array size
+* tomboy - sgers recursively
+* @array: ar sort
+* @first: fiition
+* @last: lasion
+* @size: arrsize
 */
-void qs(int *array, int first, int last, size_t size)
+void tomboy(int *array, int first, int last, size_t size)
 {
 int rnd;
 if (first < last)
 {
 rnd = partition(array, first, last, size);
-qs(array, first, rnd - 1, size);
-qs(array, rnd + 1, last, size);
+tomboy(array, first, rnd - 1, size);
+tomboy(array, rnd + 1, last, size);
 }
 }
+/*
+* quick_sort - tiiririr
+* @array: rruurur
+* @size: ieieieie
+*/
 void quick_sort(int *array, size_t size)
 {
-qs(array, 0, size - 1, size);
+tomboy(array, 0, size - 1, size);
 }
