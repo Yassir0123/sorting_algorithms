@@ -51,7 +51,7 @@ void tomboy(int *array, int first, int last, size_t size)
 int rnd;
 if (first < last)
 {
-rnd = partition(array, first, last, size);
+rnd = shota(array, first, last, size);
 tomboy(array, first, rnd - 1, size);
 tomboy(array, rnd + 1, last, size);
 }
