@@ -56,7 +56,7 @@ tomboy(array, first, rnd - 1, size);
 tomboy(array, rnd + 1, last, size);
 }
 }
-/*
+/**
 * quick_sort - tiiririr
 * @array: rruurur
 * @size: ieieieie
